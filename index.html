@@ -8,20 +8,47 @@
   <body>
     <h2>hej</h2>
     <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
     <script>
-      function myFunction() {
-        let txt;
-        if (confirm("Tryck på en knapp")) {
-          txt = "du tryckte ok!";
-        } else {
-          txt = "du tryckte cancel!";
-        }
-        document.getElementById("demo").innerHTML = txt;
-      }
+      //function myFunction() {
+      //  let txt;
+      //  if (confirm("Tryck på en knapp")) {
+      //    txt = "du tryckte ok!";
+      //  } else {
+      //    txt = "du tryckte cancel!";
+      //  }
+      //  document.getElementById("demo").innerHTML = txt;
+      // }
       ///   function sayHello(name) {
       ///       alert("Hello " + name );
       ///   }
       ///   sayHello ("casper");
+
+      //function helTal(argument1, argument2) {
+      //  return argument1 + argument2;
+      //}
+      //let svaret = helTal(9, 6);
+
+      //function hejfunc(summa, sumString) {
+      //  console.log(sumString + summa);
+      //}
+      //hejfunc(summa, "summan blir: ");
+
+      let dog = {
+        name: "olsson",
+        age: 7,
+        rymt(where) {
+          console.log("hunden har rymt in till " + where);
+        },
+        owner: {
+          name: "casper",
+          age: 21,
+          body: {
+            knees: "weak",
+            torso: "strong",
+          },
+        },
+      };
     </script>
   </body>
 </html>
